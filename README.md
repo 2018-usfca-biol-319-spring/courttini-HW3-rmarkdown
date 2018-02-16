@@ -30,10 +30,11 @@ Steps:
 8. Add and commit your R markdown script as you work on it.
 9. After you have created the plot, you should add an R code chunk in your R markdown document to apply an appropriate statistical test to determine if there are significant differences in mass of your chosen litter type across NEON sites. You should report the type of test you used, the p-value it returned, and interpretation of what this p-value means about the data you plotted.
 10. In the discussion section, explain what you think could be the ecological reason for the differences or lack of differences that you observed, based on your reading of the overview information about each of the sites on the NEON website. You don't have to have the right answer (if there even is one), but the goal is for you to apply ecological thinking to infer why you observe different patterns in the data. Think about type of vegetation that grows at each site, its climate, etc.
-11. Add and commit your Rmd file when you are done.
-12. Knit your Rmd file to a docx using the 'knit' button in RStudio and commit this docx as well.
-13. Push your commits back to your repository on GitHub.
-14. Open a pull request back to the class repository to submit your assignment.
-15. Be sure to write [meaningful commit messages](https://chris.beams.io/posts/git-commit/) and a descriptive Pull Request title and description.
+11. In the Introduction and Methods sections, you should include some background on the NEON project in general, and some short information on the sites we are working with. You don't need lots of detail, the goal is to give a reader a sense of the diversity of ecosystem types that are represented and where they are located. In the methods, you should very briefly summarize how the data were collected (detailed info is in the 'NEON_litterfall_userGuide_vA.pdf' file in the `data` folder). 
+12. Add and commit your Rmd file when you are done.
+13. Knit your Rmd file to a docx using the 'knit' button in RStudio and commit this docx as well.
+14. Push your commits back to your repository on GitHub.
+15. Open a pull request back to the class repository to submit your assignment.
+16. Be sure to write [meaningful commit messages](https://chris.beams.io/posts/git-commit/) and a descriptive Pull Request title and description.
 
 Don't hesistate to ask questions on Piazza as you work!
