@@ -31,7 +31,7 @@ Steps:
 9. After you have created the plot, you should add an R code chunk in your R markdown document to apply an appropriate statistical test to determine if there are significant differences in mass of your chosen litter type across NEON sites. You should report the type of test you used, the p-value it returned, and interpretation of what this p-value means about the data you plotted.
 10. In the discussion section, explain what you think could be the ecological reason for the differences or lack of differences that you observed, based on your reading of the overview information about each of the sites on the NEON website. You don't have to have the right answer (if there even is one), but the goal is for you to apply ecological thinking to infer why you observe different patterns in the data. Think about type of vegetation that grows at each site, its climate, etc.
 11. Add and commit your Rmd file when you are done.
-12. Knit your Rmd file to a docx and commit this docx as well.
+12. Knit your Rmd file to a docx using the 'knit' button in RStudio and commit this docx as well.
 13. Push your commits back to your repository on GitHub.
 14. Open a pull request back to the class repository to submit your assignment.
 15. Be sure to write [meaningful commit messages](https://chris.beams.io/posts/git-commit/) and a descriptive Pull Request title and description.
