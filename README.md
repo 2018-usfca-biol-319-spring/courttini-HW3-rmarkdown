@@ -7,7 +7,7 @@ The **goal of this assignment** is to help you continue to learn to use R and RS
 
 Please follow the instructions carefully and read them all before getting started.
 
-This second assignment will be worth 10 points. The grading breakdown will be as follows:
+This third assignment will be worth 10 points. The grading breakdown will be as follows:
 
 * 5 points - Completes all required steps (as outlined below)
 * 2.5 points - R markdown script is appropriately commented and well organized
@@ -24,11 +24,11 @@ Steps:
 5. Select 'Open in New Session', then 'Create Project'
 6. This should download the repository from GitHub and set up a new project for you in RStudio
 7. Now, in contrast to last week, we'll be working in the `Analysis.Rmd` file instead of an R script. So, just open the existing file (look for it in the file browser tab in the lower right-hand corner of RStudio). In this script, in addition to filling in a paragraph or two in each of the sections (Introduction, Methods, Results, Discussion), you will need to create an appropriately labeled boxplot comparing mass of one functional group of litter across all sites in the dataset. To do this, you will need to create and write the appropriate R code to:
-  * Reads in the `ltr_massdata.csv` dataset from the `data` directory
-  * Uses the `subset()` function to select all measurements from only one litter type from the following: "Flowers", "Leaves", "Mixed", "Needles", "Other", "Seeds", "Twigs/branches", "Woody material".
-  * Create a properly labelled boxplot with the variable `siteID` on the x axis and `dryMass` on the y axis. 
+  * Read in the `ltr_massdata.csv` dataset from the `data` directory
+  * Use the `subset()` function to select all measurements from only one litter type from the following: "Flowers", "Leaves", "Mixed", "Needles", "Other", "Seeds", "Twigs/branches", "Woody material".
+  * Create a properly titled and labelled boxplot with the variable `siteID` on the x axis and `dryMass` on the y axis. 
 8. Add and commit your R markdown script as you work on it.
-9. After you have created the plot, you should add an R code chunk in your R markdown document to apply a statistical test to determine if there are significant differences in mass of your chosen litter type across NEON sites. 
+9. After you have created the plot, you should add an R code chunk in your R markdown document to apply an appropriate statistical test to determine if there are significant differences in mass of your chosen litter type across NEON sites. You should report the type of test you used, the p-value it returned, and interpretation of what this p-value means about the data you plotted.
 10. In the discussion section, explain what you think could be the ecological reason for the differences or lack of differences that you observed, based on your reading of the overview information about each of the sites on the NEON website. You don't have to have the right answer (if there even is one), but the goal is for you to apply ecological thinking to infer why you observe different patterns in the data. Think about type of vegetation that grows at each site, its climate, etc.
 11. Add and commit your Rmd file when you are done.
 12. Knit your Rmd file to a docx and commit this docx as well.
