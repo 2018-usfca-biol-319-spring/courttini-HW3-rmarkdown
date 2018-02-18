@@ -61,4 +61,4 @@ A statistical test of an ANOVA was used to determine if there is a significant d
 
 # Discussion
 
-NEON contains variations in functional groups between all the sites that are being analyzed. From the litter mass data of the varying sites only woody material was looked at for analysis. From the boxplot, the 'HARV' site contained the highest amount of dry litter mass of woody material in grams, while the 'SRER' site contained the least amount of dry litter mass of woody material. I think this is due to 
+NEON contains variations in functional groups between all the sites that are being analyzed. From the litter mass data of the varying sites only woody material was looked at for analysis. From the boxplot, the 'HARV' site contained the highest amount of dry litter mass of woody material in grams, while the 'SRER' site contained the least amount of dry litter mass of woody material. Based on the differences that are observed, I think the location of the sites have a factor on how much dry mass litterfall there is. The Harvard Forest is located in Massachusetts (HARV), while Santa Rita Experimental Range (SRER) is in Arizona. 
