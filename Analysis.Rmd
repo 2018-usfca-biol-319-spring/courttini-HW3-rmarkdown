@@ -14,8 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-The National Ecological Observatory Network (NEON) is an ecological observation facility that collects data on rapidly changing ecological processes in the United States. NEON has standardized data from 81 field sites that span across the United States within 20 eco-climatic domains that represent regions of distinct landforms, vegetation, climate and ecosystem dynamics. NEON measures the causes and effects of environmental change in different types of environments. The different types of field sites include core terrestrial sites, core aquatic sites, relocatable terrestrial sites, and relocatable aquatic sites. The different sites ensure that the data will statistically represent ecological, physical, and biological differences spanning the continent. 
-As seen from the image below, the field sites are also in Alaska, Hawaii, and Puerto Rico. 
+The National Ecological Observatory Network (NEON) is an ecological observation facility that collects data on rapidly changing ecological processes in the United States. NEON has standardized data from 81 field sites that span across the United States within 20 eco-climatic domains that represent regions of distinct landforms, vegetation, climate and ecosystem dynamics. NEON measures the causes and effects of environmental change in different types of environments. The different types of field sites include core terrestrial sites, core aquatic sites, relocatable terrestrial sites, and relocatable aquatic sites. The different sites ensure that the data will statistically represent ecological, physical, and biological differences spanning the continent. As seen from the image below, the field sites are also in Alaska, Hawaii, and Puerto Rico. 
 
 ![](2017_NEONDomainOverview.jpg){width = 50%}
 
@@ -33,7 +32,7 @@ litterfall_data <- read.csv("data/ltr_massdata.csv",
                             header = TRUE)
 ```
 
-The dataset we have contains information on the varying 81 sites and their dry mass of the different functional groups. 
+The dataset we have contains information on the varying 81 sites and their litterfall dry mass of the different functional groups. 
 
 ```{r subset-out-functionalGroup-data}
 # just look at all sites with 'woody material'
@@ -50,18 +49,18 @@ boxplot(dryMass ~ siteID,
         ylab = "Dry mass of litter in grams")
 ```
 
-**Figure 1:** This boxplot shows that...
+**Figure 1:** This boxplot shows that the difference in woody material between the 7 sites that contained woody material. 
 
-When we visualize the differences between functional groups, we see that... These differences (are/are not) significant (ANOVA p = xxyz).
-
-```{r statistical-test}
+```{r statistical-test- ANOVA}
 # test for significance between the groups
 anova(lm(dryMass ~ siteID,
          data = Woody_data))
 ```
 
-Add a number of code chunks in the Results section. These should read in, subset, plot (no need to save it to pdf, since it will be put into the rendered docx when you click 'knit'), and run a statistical test on your dataset.
+A statistical test of an ANOVA was used to determine if there is a significant difference of woody material between the seven sites used in the boxplot. When we visualize the differences between functional groups, we see that... These differences (are/are not) significant (ANOVA p = xxyz).
 
 # Discussion
+
+'HARV' site contained the most amount of dry mass in grams of 
 
 Discuss the results you found. Which sites had the highest amounts of litter mass? The smallest? Why do you think this is so?
