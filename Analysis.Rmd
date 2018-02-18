@@ -34,8 +34,13 @@ HARV_data <- subset(litterfall_data,
 ```
 
 
-```{r}
-
+```{r boxplot-of-functional-types}
+# mass of litter by functional type
+boxplot(dryMass ~ functionalGroup,
+        data = HARV_data,
+        main = "Mass of litterfall by functional group",
+        xlab = "Functional Group of Litter",
+        ylab = "Dry mass of litter in grams")
 ```
 
 Add a number of code chunks in the Results section. These should read in, subset, plot (no need to save it to pdf, since it will be put into the rendered docx when you click 'knit'), and run a statistical test on your dataset.
