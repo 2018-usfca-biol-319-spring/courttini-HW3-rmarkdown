@@ -3,6 +3,8 @@ title: "HW3 R and Rmarkdown"
 author: "Courtney Lopez"
 date: "2/11/2018"
 output:
+  html_document:
+    df_print: paged
   word_document: default
 ---
 
@@ -31,10 +33,10 @@ litterfall_data <- read.csv("data/ltr_massdata.csv",
                             header = TRUE)
 ```
 
-The dataset we have contains information on...
+The dataset we have contains information on the varying 81 sites and their dry mass of the different functional groups. 
 
 ```{r subset-out-functionalGroup-data}
-# just look at site 'HARV'
+# just look at all sites with 'woody material'
 Woody_data <- subset(litterfall_data,
                     functionalGroup == "Woody material")
 ```
