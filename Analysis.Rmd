@@ -20,6 +20,24 @@ Describe briefly where the data came from (information in the pdf file in the da
 
 # Results
 
+```{r load-in-data}
+# read in the litterfall data from a csv
+litterfall_data <- read.csv("data/ltr_massdata.csv",
+                            header = TRUE)
+```
+
+
+```{r subset-out-HARV-data}
+# just look at site 'HARV'
+HARV_data <- subset(litterfall_data,
+                    siteID == "HARV")
+```
+
+
+```{r}
+
+```
+
 Add a number of code chunks in the Results section. These should read in, subset, plot (no need to save it to pdf, since it will be put into the rendered docx when you click 'knit'), and run a statistical test on your dataset.
 
 # Discussion
