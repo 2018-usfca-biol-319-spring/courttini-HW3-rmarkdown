@@ -1,6 +1,6 @@
 ---
 title: "HW3 R and Rmarkdown"
-author: "Don Francisco"
+author: "Courtney Lopez"
 date: "2/11/2018"
 output:
   word_document: default
