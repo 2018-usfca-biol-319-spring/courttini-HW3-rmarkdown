@@ -57,10 +57,8 @@ anova(lm(dryMass ~ siteID,
          data = Woody_data))
 ```
 
-A statistical test of an ANOVA was used to determine if there is a significant difference of woody material between the seven sites used in the boxplot. When we visualize the differences between functional groups, we see that... These differences (are/are not) significant (ANOVA p = xxyz).
+A statistical test of an ANOVA was used to determine if there is a significant difference of woody material between the seven sites used in the boxplot. When we visualize the differences between woody material, we see that there is a significant difference and the null hypothesis is rejected (ANOVA p = 1.882e-07).
 
 # Discussion
 
-'HARV' site contained the most amount of dry mass in grams of 
-
-Discuss the results you found. Which sites had the highest amounts of litter mass? The smallest? Why do you think this is so?
+NEON contains variations in functional groups between all the sites that are being analyzed. From the litter mass data of the varying sites only woody material was looked at for analysis. From the boxplot, the 'HARV' site contained the highest amount of dry litter mass of woody material in grams, while the 'SRER' site contained the least amount of dry litter mass of woody material. I think this is due to 
