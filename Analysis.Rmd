@@ -12,7 +12,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-Delete this text, and add a few paragraphs of introduction about the NEON project, and the sites you are comparing.
+The National Ecological Observatory Network (NEON) is an ecological observation facility that collects data on rapidly changing ecological processes in the United States. NEON has standardized data from 81 field sites that span across the United States within 20 eco-climatic domains that represent regions of distinct landforms, vegetation, climate and ecosystem dynamics.
+
+
+
+
+Delete this text, and add a few paragraphs of introduction about the NEON project, and the sites you are comparing. NEON project in general, and some short information on the sites we are working with. You don't need lots of detail, the goal is to give a reader a sense of the diversity of ecosystem types that are represented and where they are located.
 
 # Methods
 
