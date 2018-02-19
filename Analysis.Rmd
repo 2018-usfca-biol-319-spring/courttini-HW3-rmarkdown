@@ -46,7 +46,8 @@ boxplot(dryMass ~ siteID,
         data = Woody_data,
         main = "Mass of litterfall by Woody Material",
         xlab = "Woody Material of Sites",
-        ylab = "Dry mass of litter in grams")
+        ylab = "Dry mass of litter in grams",
+        las = 2)
 ```
 
 **Figure 1:** This box plot shows that the difference in woody material between the 7 sites that contained woody material. 
