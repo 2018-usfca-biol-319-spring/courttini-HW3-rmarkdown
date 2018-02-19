@@ -22,7 +22,7 @@ This image shows where the NEON sites are located including: aquatic sites, NEON
 
 # Methods
 
-The data collected at the sites is called Litterfall. This data of litter and fine woody debris is collected from each site by field sampling techniques, and sensor-derived airborne remote methods at different scales. This includes collecting data from elevated areas, ground traps, and single collection events. Mass data was collected using different functional groups which includes, leaves, needles, twigs/branches, woody material, seeds, flowers, lichen/other, and mixed. This data is used to estimate annual Above ground Net Primary Productivity (ANPP) and biomass at the sites. Also, it can be used to understand vegetative carbon fluxes over time. We are analyzing this data using R to create a box plot and ANOVA test to determine if there are significant differences of functional groups at the varying sites. 
+The data collected at the sites is called litterfall. This data of litter and fine woody debris is collected from each site by field sampling techniques, and sensor-derived airborne remote methods at different scales. This includes collecting data from elevated areas, ground traps, and single collection events. Mass data was collected using different functional groups which includes, leaves, needles, twigs/branches, woody material, seeds, flowers, lichen/other, and mixed. This data is used to estimate annual Above ground Net Primary Productivity (ANPP) and biomass at the sites. Also, it can be used to understand vegetative carbon fluxes over time. We are analyzing this data using R to create a box plot and ANOVA test to determine if there are significant differences of functional groups at the varying sites. 
 
 # Results
 
