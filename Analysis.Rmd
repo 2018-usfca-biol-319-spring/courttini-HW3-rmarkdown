@@ -3,8 +3,8 @@ title: "HW3 R and Rmarkdown"
 author: "Courtney Lopez"
 date: "2/11/2018"
 output:
-    df_print: paged
   word_document: default
+  df_print: default
 ---
 
 ```{r setup, include=FALSE}
