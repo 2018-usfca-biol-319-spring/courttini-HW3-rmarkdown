@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-The National Ecological Observatory Network (NEON) is an ecological observation facility that collects data on rapidly changing ecological processes in the United States. NEON has standardized data from 81 field sites that span across the United States within 20 eco-climatic domains that represent regions of distinct landforms, vegetation, climate and ecosystem dynamics. NEON measures the causes and effects of environmental change in different types of environments. The different types of field sites include core terrestrial sites, core aquatic sites, relocatable terrestrial sites, and relocatable aquatic sites. The different sites ensure that the data will statistically represent ecological, physical, and biological differences spanning the continent. As seen from the image below, the field sites are also in Alaska, Hawaii, and Puerto Rico. 
+The National Ecological Observatory Network (NEON) is an ecological observation facility that collects data on rapidly changing ecological processes in the United States. NEON has standardized data from 81 field sites that span across the United States within 20 eco-climatic domains that represent regions of distinct land forms, vegetation, climate and ecosystem dynamics. NEON measures the causes and effects of environmental change in different types of environments. The different types of field sites include core terrestrial sites, core aquatic sites, relocatable terrestrial sites, and relocatable aquatic sites. The different sites ensure that the data will statistically represent ecological, physical, and biological differences spanning the continent. As seen from the image below, the field sites are also in Alaska, Hawaii, and Puerto Rico. 
 
 ![](2017_NEONDomainOverview.jpg){width = 50%}
 
@@ -22,7 +22,7 @@ This image shows where the NEON sites are located including: aquatic sites, NEON
 
 # Methods
 
-The data collected at the sites is called Litterfall. This data of litter and fine woody debris is collected from each site by field sampling techniques, and sensor-derived airborne remote methods at different scales. This includes collecting data from elevated areas, ground traps, and single collection events. Mass data was collected using different functional groups which includes, leaves, needles, twigs/branches, woody material, seeds, flowers, lichen/other, and mixed. This data is used to estimate annual Aboveground Net Primary Productivity (ANPP) and biomass at the sites. Also, it can be used to understand vegetative carbon fluxes over time. We are analyzing this data using R to create a boxplot and ANOVA test to determine if there are significant differences of functional groups at the varying sites. 
+The data collected at the sites is called Litterfall. This data of litter and fine woody debris is collected from each site by field sampling techniques, and sensor-derived airborne remote methods at different scales. This includes collecting data from elevated areas, ground traps, and single collection events. Mass data was collected using different functional groups which includes, leaves, needles, twigs/branches, woody material, seeds, flowers, lichen/other, and mixed. This data is used to estimate annual Above ground Net Primary Productivity (ANPP) and biomass at the sites. Also, it can be used to understand vegetative carbon fluxes over time. We are analyzing this data using R to create a box plot and ANOVA test to determine if there are significant differences of functional groups at the varying sites. 
 
 # Results
 
@@ -32,7 +32,7 @@ litterfall_data <- read.csv("data/ltr_massdata.csv",
                             header = TRUE)
 ```
 
-The dataset we have contains information on the varying 81 sites and their litterfall dry mass of the different functional groups. 
+The data set we have contains information on the varying 81 sites and their litterfall dry mass of the different functional groups. 
 
 ```{r subset-out-functionalGroup-data}
 # just look at all sites with 'woody material'
@@ -49,7 +49,7 @@ boxplot(dryMass ~ siteID,
         ylab = "Dry mass of litter in grams")
 ```
 
-**Figure 1:** This boxplot shows that the difference in woody material between the 7 sites that contained woody material. 
+**Figure 1:** This box plot shows that the difference in woody material between the 7 sites that contained woody material. 
 
 ```{r statistical-test- ANOVA}
 # test for significance between the groups
@@ -57,8 +57,8 @@ anova(lm(dryMass ~ siteID,
          data = Woody_data))
 ```
 
-A statistical test of an ANOVA was used to determine if there is a significant difference of woody material between the seven sites used in the boxplot. When we visualize the differences between woody material, we see that there is a significant difference and the null hypothesis is rejected (ANOVA p = 1.882e-07).
+A statistical test of an ANOVA was used to determine if there is a significant difference of woody material between the seven sites used in the box plot. When we visualize the differences between woody material, we see that there is a significant difference and the null hypothesis is rejected (ANOVA p = 1.882e-07).
 
 # Discussion
 
-NEON contains variations in functional groups between all the sites that are being analyzed. From the litter mass data of the varying sites only woody material was looked at for analysis. From the boxplot, the 'HARV' site contained the highest amount of dry litter mass of woody material in grams, while the 'SRER' site contained the least amount of dry litter mass of woody material. Based on the differences that are observed, I think the location of the sites have a factor on how much woody material dry mass litterfall there is. The Harvard Forest is located in Massachusetts (HARV), while Santa Rita Experimental Range (SRER) is in Arizona. The difference in climate between these two areas can affect how much litterfall is produced and therefore measured. In concordinace with temperature, the vegetation and type of plants that are planted in these areas are different as well. The dominant vegetation at HARV is regenerating Eastern Deciduous temperate forest. The primary vegetation at SRER is a mix of short trees, shrubs, cacti and other succulents, perennial grasses, and other herbaceous species. So there is a difference between the litterfall of a forest area and a shrub area which complies with ANOVA test conducted above. There is a significant difference between siteID's. Even though SRER and HARV are both core terrestrial sites, they have different types of ecosystems. Habitats at Harvard Forest include northern, transition, and central forests; marshes, swamps, and conifer-dominated bogs; and forest plantations. While, habitats at the Santa Rita Experimental Range is majority desert. From this information, I am able to conclude that each site contains a difference in litterfall of dry mass of woody material. 
+NEON contains variations in functional groups between all the sites that are being analyzed. From the litter mass data of the varying sites only woody material was looked at for analysis. From the box plot, the 'HARV' site contained the highest amount of dry litter mass of woody material in grams, while the 'SRER' site contained the least amount of dry litter mass of woody material. Based on the differences that are observed, I think the location of the sites have a factor on how much woody material dry mass litterfall there is. The Harvard Forest is located in Massachusetts (HARV), while Santa Rita Experimental Range (SRER) is in Arizona. The difference in climate between these two areas can affect how much litterfall is produced and therefore measured. In concordance with temperature, the vegetation and type of plants that are planted in these areas are different as well. The dominant vegetation at HARV is regenerating Eastern Deciduous temperate forest. The primary vegetation at SRER is a mix of short trees, shrubs, cacti and other succulents, perennial grasses, and other herbaceous species. So there is a difference between the litterfall of a forest area and a shrub area which complies with ANOVA test conducted above. There is a significant difference between siteID's. Even though SRER and HARV are both core terrestrial sites, they have different types of ecosystems. Habitats at Harvard Forest include northern, transition, and central forests; marshes, swamps, and conifer-dominated bogs; and forest plantations. While, habitats at the Santa Rita Experimental Range is majority desert. From this information, I am able to conclude that each site contains a difference in litterfall of dry mass of woody material. 
